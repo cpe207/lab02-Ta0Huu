@@ -1,346 +1,111 @@
-html{
-    height: 100vh;
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
 }
-body{
-    width: 100%;
-    height: 100%;
+.myButton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.my-rounded-left {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .my-rounded-right {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  .my-rounded-all {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
     position: fixed;
-    top: 0;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
     bottom: 0;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.CLLeft{
-    margin-bottom: 100px;
-    margin-left: 0%;
-    top: 150px;
-    width: 150px;
-    height: 100%;
-    background-color: rgb(46, 0, 56);
-}
-
-.MyP{
-    align-items: center;
-    background-clip: padding-box;
-    background-color: rgb(46, 0, 56);
-    font-size: 16px;
-    color: whitesmoke;
-    display: inline-flex;
-    margin-right: 100%;
-    justify-content: center;
-    line-height: 1.25;
-    margin: 0;
-    min-height: 3rem;
-    padding: calc(20%) calc(21%);
-    position: relative;
-}
-
-.buttonyee{
-  align-items: center;
-  background-clip: padding-box;
-  background-color:rgb(46, 0, 56);
-  border: 1px solid transparent;
-  box-sizing: border-box;
-  color: whitesmoke;
-  cursor: pointer;
-  display: inline-flex;
-  margin-right: 100%;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(20%) calc(49.5%);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: 36%;
-  z-index: 4;
-}
-
-.buttonyee:hover,.buttonyee:focus {
-  background-color: rgb(55, 16, 63);
-}
-
-.buttonyee:hover {
-  transform: translateY(-1px);
-}
-
-.buttonyee:active {
-  background-color: rgb(88, 54, 96);
-  transform: translateY(0);
-}
-
-.one1top{
-    position: absolute;
-    background-color: rgb(20, 63, 92);
-    width: 150%;
-    height: 85%;
-    top: -45%;
-    bottom: 50%;
-    left: 0%;
-    right: 10%;
-    z-index: -2;
-}
-
-.circlewhite{   
-    position: absolute;
-    background-color: white;
-    width: 20%;
-    height: 75%;
-    top: 70%;
-    right: 70%;
-    border-radius: 50%;
-}
-
-.imgprofile{
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    top: 10%;
-    right: 10%;
-    border-radius: 50%;
-}
-
-h6.a {
-    font-size: 300%;
-    position: absolute;
-    color: rgb(0, 174, 255);
-    top: 30%;
-    right: 30%;
-    z-index: 6;
-}
-
-h6.b{
-    font-size: 125%;
-    position: absolute;
-    color: rgb(131, 186, 211);
-    top: 36.5%;
-    right: 30%;
-    z-index: 6;
-}
-
-h6.c{
-    font-size: 250%;
-    position: absolute;
-    color: rgb(255, 61, 61);
-    top: 50%;
-    right: 45%;
-    z-index: 6;
-}
-
-h6.d{
-    font-size: 175%;
-    position: absolute;
-    text-decoration: underline;
-    color: rgb(192, 97, 97);
-    top: 60%;
-    right: 25%;
-    padding: 10px;
-    padding-bottom: 5%;
-    padding-right: 20%;
-    z-index: 6;
-    border: 2px solid red;
-    
-}
-
-h6.f{
-    font-size: 125%;
-    position: absolute;
-    text-decoration: underline;
-    color: rgb(255, 139, 139);
-    top: 70%;
-    right: 26%;
-    z-index: 6;
-
-}
-
-.two{
-    position: absolute;
-    background-color: rgb(20, 63, 92);
-    width: 150%;
-    height: 85%;
-    top: -45%;
-    bottom: 50%;
-    left: 0%;
-    right: 10%;
-    transform: rotate(-8deg);
-    z-index: -2;
-}
-
-.twobt{
-    position: absolute;
-    background-color: rgba(12, 0, 47, 0.53);
-    width: 150%;
-    height: 85%;
-    top: 45%;
-    bottom: 50%;
-    left: 0%;
-    right: 10%;
-    transform: rotate(-8deg);
-    z-index: -2;
-}
-
-.cir{   
-    position: absolute;
-    background-color: white;
-    width: 20%;
-    height: 40%;
-    top: 30%;
-    right: 50%;
-    border-radius: 50%;
-    z-index: -2;
-}
-
-.cir1{   
-    position: absolute;
-    background-color: white;
-    width: 15%;
-    height: 30%;
-    top: 25%;
-    right: 10%;
-    border-radius: 50%;
-    z-index: -2;
-}
-
-h6.e{
-    font-size: 300%;
-    text-decoration: underline;
-    position: absolute;
-    color: rgb(160, 0, 0);
-    top: 2.5%;
-    right: 70%;
-}
-
-h6.g{
-    font-size: 300%;
-    text-decoration: underline;
-    position: absolute;
-    color: rgb(28, 93, 183);
-    top: 55%;
-    right: 5%;
-}
-
-h6.h{
-    font-size: 150%;
-    text-decoration: underline;
-    position: absolute;
-    color: rgb(149, 36, 36);
-    top: 15%;
-    right: 33%;
-}
-
-h6.j{
-    font-size: 150%;
-    text-decoration: underline;
-    position: absolute;
-    color: rgb(25, 87, 174);
-    top: 70%;
-    right: 5%;
-}
-
-.bigcir{   
-    position: absolute;
-    background-color: rgb(255, 94, 94);
-    width: 50%;
-    height: 95%;
-    top: 2.5%;
-    right: 20%;
-    border-radius: 50%;
+    left: 0;
     z-index: -1;
 }
 
-.buttonmail{
-    align-items: center;
-    background-clip: padding-box;
-    background-color:rgb(162, 45, 45);
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    color: whitesmoke;
-    cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    line-height: 1.25;
-    margin: 0;
-    min-height: 3rem;
-    position: relative;
-    text-decoration: none;
-    transition: all 250ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    border-radius: 50%;
-    width: 30%;
-    top: 25%;
-    right: -35%;
-    z-index: 1;
-  }
-  
-  .buttonmail:hover,.buttonmail:focus {
-    background-color: rgb(193, 90, 90);
-  }
-  
-  .buttonmail:hover {
-    transform: translateY(-1px);
-  }
-  
-  .buttonmail:active {
-    background-color: rgb(192, 132, 132);
-    transform: translateY(0);
-  }
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
 
-.buttonig{
-    align-items: center;
-    background-clip: padding-box;
-    background-color:rgb(162, 45, 45);
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    color: whitesmoke;
-    cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    line-height: 1.25;
-    margin: 0;
-    min-height: 3rem;
-    position: relative;
-    text-decoration: none;
-    transition: all 250ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    border-radius: 50%;
-    width: 30%;
-    top: 40%;
-    right: -5%;
-  }
-  
-  .buttonig:hover,.buttonig:focus {
-    background-color: rgb(193, 90, 90);
-  }
-  
-  .buttonig:hover {
-    transform: translateY(-1px);
-  }
-  
-  .buttonig:active {
-    background-color: rgb(192, 132, 132);
-    transform: translateY(0);
-  }
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
 
-  h6.k{
-    font-size: 150%;
-    text-decoration: underline;
-    position: absolute;
-    color: rgb(25, 87, 174);
-    top: 10%;
-    right: 42.5%;
-  }
-  
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
